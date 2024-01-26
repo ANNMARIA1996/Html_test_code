@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello, World!</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   </head>
   <body>
      <div class="div">
@@ -15,12 +16,12 @@
     <div class="div-3">
       <div class="div-4">
         <div class="div-5">
-          <img
-            loading="lazy"
-            srcset="..."
-            class="img-2"
-            src="http://www.w3.org/2000/svg"
-          />
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none" class="img-2">
+            <path d="M8 11H1L2 5.5L10 1L8 11Z" fill="#528FF0" stroke="#528FF0"/>
+            </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="23" viewBox="0 0 12 23" fill="none" >
+            <path d="M7 22H3L6 8L1 11L2 8L11 2L7 22Z" fill="white" stroke="white"/>
+            </svg>
           <div class="div-6">Treva</div>
         </div>
         <div class="div-7">Lorem ipsum dolor sit amet consectetur</div>
@@ -28,7 +29,8 @@
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
           nisi ut aliquip ex ea commodo consequat.
         </div>
-        <div class="div-9">Sign Up Now</div>
+      
+        <button type="button" class="btn btn-primary div-9">Sign Up Now</button>
       </div>
       <div class="div-10">
         <img
@@ -36,11 +38,18 @@
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/6c521eba21ded144f5c405adbbf92f043fc2e0eda092f0d105113f946b3c477f?"
           class="img-3"
         />
-        <div class="div-11">
-          <div class="div-12"></div>
-          <div class="div-13"></div>
-          <div class="div-14"></div>
+        <div class="dot">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" class="dots">
+                <circle cx="6" cy="6" r="6" fill="white"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" class="dots">
+                    <circle cx="6" cy="6" r="6" fill="white" fill-opacity="0.4"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" class="dots">
+                        <circle cx="6" cy="6" r="6" fill="white" fill-opacity="0.4"/>
+                        </svg>
         </div>
+      
       </div>
     </div>
   </div>
@@ -55,31 +64,45 @@
       <div class="div-18">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </div>
-      <div class="div-19">Name</div>
-      <div class="div-20"></div>
-      <div class="div-21">
-        <div class="div-22">
-          <div class="div-23">Email</div>
-          <div class="div-24"></div>
-        </div>
-        <div class="div-25">
-          <div class="div-26">Phone number</div>
-          <div class="div-27"></div>
-        </div>
+     
+      <div class="container mt-3">
+       .
+        <form >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control"  name="name">
+          </div>
+          <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="pwd">Email</label>
+                  <input type="email" class="form-control" id="email"  name="email">
+                </div>
+                <div class="col">
+                    <label for="pwd">Phone number</label>
+                  <input type="number" class="form-control"  name="number">
+                </div>
+              </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="pwd">Choose a topic</label>
+            <select   class="form-control " id="pwd" >
+                <option selected>Select one...</option>
+            </select>
+            
+          </div>
+          <div class="form-group">
+            <label for="text">Message</label>
+            <input type="text" class="form-control div-32" id="text" placeholder="Type your message..." name="message">
+          </div>
+          
+        </form>
+     
       </div>
-      <div class="div-28">Choose a topic</div>
-      <div class="div-29">
-        <div class="div-30">Select one...</div>
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/8d9b629476cef20f2dab7d2f3dd144c7a769d15dc5ab238fe1e8dce7bded8741?"
-          class="img-5"
-        />
-      </div>
-      <div class="div-31">Message</div>
-      <div class="div-32">Type your message...</div>
-      <div class="div-33">Submit</div>
+      <button type="submit" class="btn btn-primary div-33">Submit</button>
     </div>
+   
   </div>
 </div>
   </body>
